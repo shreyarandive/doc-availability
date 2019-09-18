@@ -12,7 +12,10 @@ class DoctorsRosterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        Parser.instance.getTherapistsData { (doctors) in
+            print(doctors)
+        }
     }
 
 

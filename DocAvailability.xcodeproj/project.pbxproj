@@ -16,6 +16,9 @@
 		350A2B6623319DB700B03AD0 /* BottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A2B6523319DB700B03AD0 /* BottomBorder.swift */; };
 		350A2B6823319DE200B03AD0 /* DoctorRosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A2B6723319DE200B03AD0 /* DoctorRosterCell.swift */; };
 		350A2B6B23319E0500B03AD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A2B6A23319E0500B03AD0 /* Constants.swift */; };
+		350A2B6E2331A32400B03AD0 /* doctorsdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 350A2B6D2331A32400B03AD0 /* doctorsdata.json */; };
+		350A2B702331A71500B03AD0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A2B6F2331A71500B03AD0 /* Parser.swift */; };
+		350A2B722331A73100B03AD0 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A2B712331A73100B03AD0 /* Doctor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		350A2B6523319DB700B03AD0 /* BottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBorder.swift; sourceTree = "<group>"; };
 		350A2B6723319DE200B03AD0 /* DoctorRosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRosterCell.swift; sourceTree = "<group>"; };
 		350A2B6A23319E0500B03AD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		350A2B6D2331A32400B03AD0 /* doctorsdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doctorsdata.json; sourceTree = "<group>"; };
+		350A2B6F2331A71500B03AD0 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		350A2B712331A73100B03AD0 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		350A2B4D23319C2D00B03AD0 /* DocAvailability */ = {
 			isa = PBXGroup;
 			children = (
+				350A2B6C2331A30700B03AD0 /* Json */,
 				350A2B6923319DF200B03AD0 /* Utilities */,
 				350A2B6123319D1300B03AD0 /* Model */,
 				350A2B6023319CFE00B03AD0 /* View */,
@@ -88,6 +95,7 @@
 		350A2B6123319D1300B03AD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				350A2B712331A73100B03AD0 /* Doctor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,8 +112,17 @@
 			isa = PBXGroup;
 			children = (
 				350A2B6A23319E0500B03AD0 /* Constants.swift */,
+				350A2B6F2331A71500B03AD0 /* Parser.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		350A2B6C2331A30700B03AD0 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				350A2B6D2331A32400B03AD0 /* doctorsdata.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350A2B6E2331A32400B03AD0 /* doctorsdata.json in Resources */,
 				350A2B5923319C2E00B03AD0 /* LaunchScreen.storyboard in Resources */,
 				350A2B5623319C2E00B03AD0 /* Assets.xcassets in Resources */,
 				350A2B5423319C2D00B03AD0 /* Main.storyboard in Resources */,
@@ -181,10 +199,12 @@
 			files = (
 				350A2B6623319DB700B03AD0 /* BottomBorder.swift in Sources */,
 				350A2B6823319DE200B03AD0 /* DoctorRosterCell.swift in Sources */,
+				350A2B722331A73100B03AD0 /* Doctor.swift in Sources */,
 				350A2B5123319C2D00B03AD0 /* DoctorsRosterVC.swift in Sources */,
 				350A2B6423319D9D00B03AD0 /* RoundedButton.swift in Sources */,
 				350A2B4F23319C2D00B03AD0 /* AppDelegate.swift in Sources */,
 				350A2B6B23319E0500B03AD0 /* Constants.swift in Sources */,
+				350A2B702331A71500B03AD0 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

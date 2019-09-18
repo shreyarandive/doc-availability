@@ -1,0 +1,104 @@
+{
+    "doctors": [
+        {
+            "id": 1001,
+            "name": "Stephen Strange",
+            "since": 1485674410,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 53672,
+                "duration": 6735
+            }
+        },
+        {
+            "id": 1002,
+            "name": "John H. Watson",
+            "since": 1489034440,
+            "license": "Ph.D.",
+            "shiftInfo": {
+                "startTime": 89768,
+                "duration": 7624
+            }
+        },
+        {
+            "id": 1003,
+            "name": "Natasha Ramonoff",
+            "since": 1490846755,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 56246,
+                "duration": 34534
+            }
+        },
+        {
+            "id": 1004,
+            "name": "Steve Rogers",
+            "since": 1544837111,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 46234,
+                "duration": 13465
+            }
+        },
+        {
+            "id": 1005,
+            "name": "Tony Howard Stark",
+            "since": 1481312890,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 8600,
+                "duration": 35436
+            }
+        },
+        {
+            "id": 1006,
+            "name": "Bruce 'Hulk' Banner",
+            "since": 1545746878,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 76345,
+                "duration": 96547
+            }
+        },
+        {
+            "id": 1007,
+            "name": "Albert Einstein",
+            "since": 1585369379,
+            "license": "Ph.D",
+            "shiftInfo": {
+                "startTime": 56785,
+                "duration": 9678
+            }
+        },
+        {
+            "id": 1008,
+            "name": "Thor Odinson",
+            "since": 1563012796,
+            "license": "Son of Odinson",
+            "shiftInfo": {
+                "startTime": 86500,
+                "duration": 9634
+            }
+        },
+        {
+            "id": 1009,
+            "name": "Sherlock Holmes",
+            "since": 1578411373,
+            "license": "Detective",
+            "shiftInfo": {
+                "startTime": 21346,
+                "duration": 45123
+            }
+        },
+        {
+            "id": 1010,
+            "name": "Clint Barton",
+            "since": 1567289439,
+            "license": "Avenger",
+            "shiftInfo": {
+                "startTime": 76400,
+                "duration": 34453
+            }
+        }
+    ]
+}

@@ -9,3 +9,4 @@
 import Foundation
 
 let DOCTOR_ROSTER_CELL = "doctorsRosterCell"
+let DOCTORS_JSON = "doctorsdata"
