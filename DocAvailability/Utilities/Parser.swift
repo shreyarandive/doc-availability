@@ -14,6 +14,7 @@ class Parser {
     
     func getTherapistsData(completion: @escaping (_ allTherapists: [Doctor]) -> Void) {
         parseJSON()
+        addTherapistInfo()
         doctors.sort(by: {$0.info?.shift.startTime.hhMM ?? 0 < $1.info?.shift.startTime.hhMM ?? 0})
         completion(doctors)
     }
@@ -29,6 +30,18 @@ class Parser {
             doctors = response.doctors
         } catch let error {
             debugPrint(error as Any)
+        }
+    }
+    
+    func addTherapistInfo() {
+        for (item, _) in doctors.enumerated() {
+            doctors[item].shiftInfo.end = doctors[item].addShiftDurationToStartTime()
+            
+            let timeInfo = doctors[item].getShiftTimeInfo()
+            let shiftInfo = TypeOfShiftTime(startTime: timeInfo.start, endTime: timeInfo.end, duration: timeInfo.duration)
+            let info = DoctorInfo(name: doctors[item].name, shift: shiftInfo, doctorSince: doctors[item].getLicenseSince())
+            
+            doctors[item].info = info
         }
     }
 }
